@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-brand: #15803d;
+}
+
+.menu li a.active {
+  background-color: color-mix(in srgb, var(--color-brand) 10%, transparent);
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+:where(.dark) .menu li a.active {
+  background-color: color-mix(in srgb, var(--color-brand) 20%, transparent);
+  color: #4ade80; 
+}
